@@ -12,10 +12,15 @@
     "node": ">=14.13.1"
   },
   "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.10",
     "@shopify/shopify-app-express": "^1.1.0",
     "@shopify/shopify-app-session-storage-sqlite": "^1.0.0",
     "compression": "^1.7.4",
     "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^7.0.0-next.1",
     "serve-static": "^1.14.1"
   },
   "devDependencies": {

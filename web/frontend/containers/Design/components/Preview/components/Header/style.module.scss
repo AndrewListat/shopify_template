@@ -1,0 +1,61 @@
+.Header{
+  background: white;
+  // height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  border-bottom: 1px solid #EBE6E0;
+  padding: 0 20px;
+  .text{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .activeInput{
+    display: flex;
+    .text{
+      font-weight: 400;
+      font-size: 14px;
+      color: #676664;
+      margin-right: 8px;
+      &.active{
+        color: #ff9f85;
+      }
+    }
+  }
+}
+
+
+.ModalBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  .title{
+    color: #202123;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 133% */
+    text-align: center;
+    color: #6D7175;
+    margin-top: 10px;
+  }
+  .actions{
+    margin-top: 30px;
+    margin-bottom: 4px;
+    display: flex;
+    width: 100%;
+    button + button {
+      margin-left: 10px;
+    }
+  }
+}

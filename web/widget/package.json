@@ -1,0 +1,25 @@
+{
+  "name": "widget",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-styled-components": "^2.0.7",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "preact": "^10.12.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  }
+}

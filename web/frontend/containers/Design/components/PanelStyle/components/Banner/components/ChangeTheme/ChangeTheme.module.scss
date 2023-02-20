@@ -1,0 +1,27 @@
+.ChangeTheme{
+  margin-top: -20px;
+  .item + .item{
+    margin-top: 20px;
+  }
+  .title{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(225, 227, 229);
+    padding-bottom: 10px;
+  }
+  .item{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    .block{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      &:hover{
+        background: rgba($color: #000000, $alpha: 0.4);
+      }
+    }
+  }
+}

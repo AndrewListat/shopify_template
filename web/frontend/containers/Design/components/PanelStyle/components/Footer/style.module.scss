@@ -1,0 +1,35 @@
+.Footer{
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #EBE6E0;
+  :global{
+    .Polaris-Button{
+      .Polaris-Button__Text{
+        display: flex;
+        align-items: center;
+      }
+      svg{
+        width: 20px;
+        height: 20px;
+        fill: #000000;
+      }
+    }
+    .Polaris-Button--disabled{
+      svg{
+        fill: rgb(140, 145, 150);
+      }
+      background: #F9F6F3;
+      border-color: #F9F6F3;
+    }
+    .Polaris-Button--primary{
+      background: #ff9f85;
+      // background: linear-gradient(88.88deg, #FF9D85 0%, #FFD585 100%);
+      &:hover{
+        // background: linear-gradient(110deg, #5F3A8F 35%, #00DEFF 150%) !important;
+        background: linear-gradient(88.88deg, #FF9D85 25%, #FFD585 150%)!important;
+      }
+    }
+  }
+}

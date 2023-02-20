@@ -1,0 +1,87 @@
+.Header{
+  padding: 8px 20px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBE6E0;
+  display: flex;
+  justify-content: space-between;
+  .Rating, .FAQ{
+    display: flex;
+    :global{
+      .Polaris-Button + .Polaris-Button{
+        margin-left: 10px;
+      }
+      .Polaris-Button{
+        height: 40px;
+        .Polaris-Button__Text{
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  
+  .header_button{
+    width: 240px;
+  }
+  
+  @media only screen and (max-width: 1133px) {
+    /* For mobile phones: */
+    .header_button{
+      width: 106px;
+      :global{
+        .Polaris-Button__Text{
+          display: none;
+        }
+      }
+    }
+    .FAQ{
+      :global{
+        .Polaris-Button{
+          min-height: 40px;
+          .Polaris-Button__Text{
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    .Rating{
+      display: none;
+    }
+    
+    
+    padding: 8px 20px;
+  }
+}
+
+.ModalBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  .title{
+    color: #202123;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 133% */
+    text-align: center;
+    color: #6D7175;
+    margin-top: 10px;
+  }
+  .actions{
+    margin-top: 30px;
+    margin-bottom: 4px;
+    display: flex;
+    width: 100%;
+    button + button {
+      margin-left: 10px;
+    }
+  }
+}

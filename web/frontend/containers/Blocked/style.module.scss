@@ -1,0 +1,17 @@
+.Blocked{
+	position: absolute;
+	z-index: 99;
+	width: calc(100% + 8px);
+	height: calc(100% + 8px);
+	top: -4px;
+	left: -4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	background: rgba($color: #676664, $alpha: 0.64);
+	cursor: pointer;
+	&:hover{
+		background: rgba($color: #676664, $alpha: 0.8);
+	}
+}

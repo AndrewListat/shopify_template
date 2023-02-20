@@ -1,0 +1,11 @@
+.TextInput{
+  padding: 10px 0;
+  :global{
+    .Polaris-TextField__Backdrop{
+      border-radius: 6px;
+    }
+    .Polaris-Labelled__LabelWrapper{
+      margin-bottom: 11px;
+    }
+  }
+}

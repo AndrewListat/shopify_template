@@ -1,0 +1,120 @@
+.PositionField{
+  padding: 10px 0;
+  :global{
+    .Polaris-Label{
+      margin-bottom: 11px;
+    }
+  }
+  .items{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    .item + .item{
+      margin-left: 15px;
+    }
+    position: relative;
+    .block{
+      position: absolute;
+      display: flex;
+      width: calc(75% - 3.75px);
+      height: 100%;
+      right: 0;
+    }
+    
+    .item{
+      cursor: pointer;
+      width: 100%;
+      background: #FFFFFF;
+      border: 2px solid #9B9691;
+      box-sizing: border-box;
+      border-radius: 6px;
+      height: 40px;
+      .logo{
+        background: #9B9691;
+        width: 7px;
+        height: 7px;
+        margin-left: 2px;
+      }
+      .text{
+        color: #9B9691;
+        margin-left: 2px;
+        margin-right: 2px;
+        font-size: 9px;
+      }
+      .btn{
+        background: #9B9691;
+        width: 14px;
+        height: 7px;
+        margin-right: 2px;
+      }
+      &:hover{
+        border-color: #676664;
+        .logo, .btn{
+          background: #676664 !important;
+        }
+        .text{
+          color: #676664 !important;
+        }
+      }
+      &.active{
+        border-color: black;
+        .logo, .btn{
+          background: black !important;
+        }
+        .text{
+          color: black !important;
+        }
+      }
+      &.left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &.center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &.space_between{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      // &.right{
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: flex-end;
+      //   div{
+      //     background: #9B9691;
+      //     width: 7px;
+      //     height: 14px;
+      //     margin-right: -2px;
+      //   }
+      // }
+      // &.bottom_right{
+      //   display: flex;
+      //   align-items: flex-end;
+      //   justify-content: flex-end;
+      //   div{
+      //     background: #9B9691;
+      //     width: 14px;
+      //     height: 7px;
+      //     margin-right: 10px;
+      //     margin-bottom: -2px;
+      //   }
+      // }
+      // &.bottom_left{
+      //   display: flex;
+      //   align-items: flex-end;
+      //   justify-content: flex-start;
+      //   div{
+      //     background: #9B9691;
+      //     width: 14px;
+      //     height: 7px;
+      //     margin-left: 10px;
+      //     margin-bottom: -2px;
+      //   }
+      // }
+    }
+  }
+}

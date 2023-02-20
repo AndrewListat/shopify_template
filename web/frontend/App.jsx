@@ -7,6 +7,9 @@ import {
   QueryProvider,
   PolarisProvider,
 } from "./components";
+import store from "./redux/store";
+import { Provider as ProviderRedux } from 'react-redux';
+import Layout from "./containers/Layout/Layout";
 
 export default function App() {
   // Any .tsx or .jsx files in /pages will become a route
@@ -18,15 +21,19 @@ export default function App() {
       <BrowserRouter>
         <AppBridgeProvider>
           <QueryProvider>
-            <NavigationMenu
+            {/* <NavigationMenu
               navigationLinks={[
                 {
-                  label: "Page name",
+                  label: "Test",
                   destination: "/pagename",
                 },
               ]}
-            />
-            <Routes pages={pages} />
+            /> */}
+            <ProviderRedux store={store}>
+              <Layout>
+                <Routes pages={pages} />
+              </Layout>
+            </ProviderRedux>
           </QueryProvider>
         </AppBridgeProvider>
       </BrowserRouter>

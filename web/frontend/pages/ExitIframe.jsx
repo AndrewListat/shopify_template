@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 
 export default function ExitIframe() {
   const app = useAppBridge();
+  console.log("🚀 ~ file: ExitIframe.jsx:8 ~ ExitIframe ~ app", app)
   const { search } = useLocation();
 
   useEffect(() => {

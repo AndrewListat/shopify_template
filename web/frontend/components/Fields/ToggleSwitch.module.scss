@@ -1,0 +1,33 @@
+.ToggleSwitch{
+  display: flex;
+  align-items: center;
+  :global{
+    .react-switch-handle{
+      background: transparent !important;
+    }
+  }
+
+  &:hover{
+    :global{
+      .react-switch-bg{
+        background: #9B9691 !important;
+      }
+    }
+  }
+  &.active{
+    &:hover{
+      :global{
+        .react-switch-bg{
+          background: #ff9f85 !important;
+        }
+      }
+    }
+  }
+}
+
+.ToggleSwitchField{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
